@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>text</title>
+</head>
+	
+	<style>
+	.content{
+		top: 20px;
+		width: 100%;
+		height: 800px;
+		background-image: linear-gradient(#458fce,#F1E5E5);
+	
+	}
+	</style>
+	
+	
+
+<body>
+	<div class="content">
+
+<!--插入按钮 结束-->
+<!--引用JS代码以达到弹出对话框目的 开始-->
+<!--
+<script language="javascript">
+function MsgBox(){ alert("你确定要提交问题吗？");} //弹出对话框
+</script>
+-->
+	
+<!--引用JS代码以达到弹出对话框目的 结束-->
+		<br>
+<div style="text-align:center; top=20px;"><tr><p>在此写出你的问题：</p></tr>
+<!--	</tr><input type="text" name="question" style="width:500px; height:300px; "><br><br><br>-->
+	<tr><td><textarea name="ques" rows="20" cols="60"></textarea></td></tr><br>
+	<br><button onclick="myFunction()">提交问题</button>
+	<a href="index.html" target="_top">返回首页</a>
+<!--	     <button onclick="Back()">返回</button>-->
+		</div>
+		
+<!--
+<p id="demo1"></p>
+<script>
+function Back(){
+	var y;
+	<a href="buchong.html" target="_blank">访问菜鸟教程!</a>
+	document.getElementById("demo1").innerHTML=y;
+}
+</script>		
+-->
+	
+
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x;
+	var r=confirm("你确定要提交问题吗？");
+	if (r==true){
+		x="提交成功!";
+		
+		
+	}
+	else{
+		x="已取消";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+</div>
+<!--
+<div style="text-align:center;">
+	<input type="button" value="提交" onclick="MsgBox()" />
+	<input type="reset" name="reset" value="取消"/>
+	</div>
+</div>
+-->
+</body>
+</html>
